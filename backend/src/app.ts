@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import { env } from './config/env';
 import { pool } from './config/db';
+import authRoutes from './modules/auth/auth.routes';
 
 const app = express();
 
@@ -17,5 +18,8 @@ pool.connect()
   .catch((err) => {
     console.error('❌ Failed to connect to PostgreSQL:', err.message)
   })
+
+// Semua route auth diawali /api/auth  -> jadi register = /api/auth/register
+app.use('/api/auth', authRoutes)
 
 export default app;
