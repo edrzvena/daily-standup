@@ -33,7 +33,7 @@ export async function getUserStandupsHandler(req: Request, res: Response) {
 // GET /api/standups/:id — detail satu standup
 export async function getStandupDetailHandler(req: Request, res: Response) {
   try {
-    const standupId = parseInt(req.params.id);
+    const standupId = parseInt(String(req.params.id));
     const { id: userId, role } = req.user!;
 
     const standup = await getStandupDetail(standupId, userId, role);
