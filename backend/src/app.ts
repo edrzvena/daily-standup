@@ -3,6 +3,7 @@ import cors from 'cors';
 import { env } from './config/env';
 import { pool } from './config/db';
 import authRoutes from './modules/auth/auth.routes';
+import standupRoutes from './modules/standup/standup.routes';
 
 const app = express();
 
@@ -21,5 +22,9 @@ pool.connect()
 
 // Semua route auth diawali /api/auth  -> jadi register = /api/auth/register
 app.use('/api/auth', authRoutes)
+app.use('/api/standups', standupRoutes);
+
+// Health check
+app.get('/health', (_, res) => res.json({ status: 'OK' }));
 
 export default app;
