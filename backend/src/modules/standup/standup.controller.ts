@@ -9,6 +9,8 @@ import {
 // POST /api/standups — generate + simpan standup baru
 export async function createStandupHandler(req: Request, res: Response) {
   try {
+
+    console.log('req.user:', req.user);  // liat di terminal backend
     const { rawInput } = req.body;
     const userId = req.user!.id;
 

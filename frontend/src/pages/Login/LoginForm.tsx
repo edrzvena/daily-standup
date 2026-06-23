@@ -25,7 +25,13 @@ export function LoginForm() {
     try {
       const { token, user } = await loginUser(email, password);
       setAuth(user, token);
-      navigate('/dashboard');
+
+      // Redirect berdasarkan role
+      if (user.role === 'admin') {
+        navigate('/admin');
+      } else {
+        navigate('/dashboard');
+      }
     } catch (err: any) {
       setError(err.response?.data?.message || 'Login gagal');
     } finally {
