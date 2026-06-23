@@ -1,5 +1,5 @@
 import { api } from '../config/api';
-import type { Standup, AuthResponse } from '../types';
+import type { Standup, AuthResponse, User } from '../types';
 
 // AUTH
 export async function registerUser(email: string, password: string) {
@@ -31,5 +31,10 @@ export async function fetchStandupDetail(id: number): Promise<{ standup: Standup
 // ADMIN
 export async function fetchAllStandups(): Promise<{ standups: Standup[] }> {
   const res = await api.get('/standups/admin/all');
+  return res.data;
+}
+
+export async function fetchAllUsers(): Promise<{ users: User[] }> {
+  const res = await api.get('/auth/users');
   return res.data;
 }
