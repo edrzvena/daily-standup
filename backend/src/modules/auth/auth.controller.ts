@@ -1,5 +1,6 @@
 import { Request, Response } from 'express';
 import { register, login } from './auth.service';
+import { getAllUsers } from './auth.repository';
 
 export async function registerHandler(req: Request, res: Response) {
   try {
@@ -24,5 +25,14 @@ export async function loginHandler(req: Request, res: Response) {
     res.json(result);
   } catch (error: any) {
     res.status(401).json({ message: error.message });
+  }
+}
+
+export async function getAllUsersHandler(req: Request, res: Response) {
+  try {
+    const users = await getAllUsers();
+    res.json({ users });
+  } catch (error: any) {
+    res.status(500).json({ message: error.message });
   }
 }
