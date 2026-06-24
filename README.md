@@ -36,7 +36,7 @@ Aplikasi ini hadir untuk menyederhanakan proses tersebut. Tulis saja apa yang di
 |-----------|-------|------------|
 | Express | 5.2.1 | Web framework untuk Node.js |
 | TypeScript | 6.0.3 | Superset JavaScript dengan static typing |
-| PostgreSQL | - | Database relasional untuk menyimpan data |
+| PostgreSQL | 8.14 | Database relasional untuk menyimpan data |
 | Anthropic SDK | 0.105.0 | Integrasi dengan Claude AI |
 | JSON Web Token | 9.0.3 | Autentikasi berbasis token |
 | bcryptjs | 3.0.3 | Enkripsi password |
