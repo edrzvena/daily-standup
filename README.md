@@ -1,6 +1,6 @@
-# Daily Standup Generator
+# Daily Standup
 
-Aplikasi web yang membantu developer menghasilkan laporan standup harian secara otomatis. Pengguna cukup menuliskan aktivitas kerja mereka dalam bahasa sehari-hari, dan aplikasi akan mengubahnya menjadi laporan standup yang terstruktur dan siap dibagikan ke tim.
+Web yang membantu developer menghasilkan laporan standup harian secara otomatis. Pengguna cukup menuliskan aktivitas kerja mereka dalam bahasa sehari-hari, dan aplikasi akan mengubahnya menjadi laporan standup yang terstruktur dan siap dibagikan ke tim.
 
 ## Latar Belakang
 
