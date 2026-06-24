@@ -22,25 +22,25 @@ Aplikasi ini hadir untuk menyederhanakan proses tersebut. Tulis saja apa yang di
 
 | Teknologi | Versi | Keterangan |
 |-----------|-------|------------|
-| React | 19 | Library utama untuk membangun antarmuka |
-| TypeScript | 6 | Superset JavaScript dengan static typing |
-| Vite | 8 | Build tool dan development server |
-| Tailwind CSS | 4 | Utility-first CSS framework |
-| Zustand | 5 | State management global |
-| Axios | 1 | HTTP client untuk komunikasi dengan backend |
-| React Router DOM | 7 | Routing pada sisi klien |
+| React | 19.2.6 | Library utama untuk membangun antarmuka |
+| TypeScript | 6.0.2 | Superset JavaScript dengan static typing |
+| Vite | 8.0.12 | Build tool dan development server |
+| Tailwind CSS | 4.3.1 | Utility-first CSS framework |
+| Zustand | 5.0.14 | State management global |
+| Axios | 1.18.0 | HTTP client untuk komunikasi dengan backend |
+| React Router DOM | 7.18.0 | Routing pada sisi klien |
 
 ### Backend
 
 | Teknologi | Versi | Keterangan |
 |-----------|-------|------------|
-| Express | 5 | Web framework untuk Node.js |
-| TypeScript | 6 | Superset JavaScript dengan static typing |
+| Express | 5.2.1 | Web framework untuk Node.js |
+| TypeScript | 6.0.3 | Superset JavaScript dengan static typing |
 | PostgreSQL | - | Database relasional untuk menyimpan data |
-| Anthropic SDK | 0.105 | Integrasi dengan Claude AI |
-| JSON Web Token | 9 | Autentikasi berbasis token |
-| bcryptjs | 3 | Enkripsi password |
-| tsx | 4 | TypeScript executor untuk development |
+| Anthropic SDK | 0.105.0 | Integrasi dengan Claude AI |
+| JSON Web Token | 9.0.3 | Autentikasi berbasis token |
+| bcryptjs | 3.0.3 | Enkripsi password |
+| tsx | 4.22.4 | TypeScript executor untuk development |
 
 ## Arsitektur Backend
 
